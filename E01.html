@@ -10,10 +10,27 @@
     */
     
     //Entrada
-
-
+    const número = Number(prompt("informe numero 1 "))
+    const número2 = Number(prompt("informe numero 2 "))
+    const operação = prompt("qual a operação? par ou ímpar, positivo ou negativo inteiro ou decimal.")
     //Processamento
-
+    if (número % 2 && operação === "par"){
+        document.write(`seu numero ${número} é par`)
+    }else if (número2 % 3 && operação === "ímpar"){
+        document.write(`seu numero ${número2} é ímpar`)
+    }else {if(número - número && operação === "negativo"){
+        document.write(`seu numero ${número} é negativo`)
+    }
+    } if(número2 - número2 && operação === "negativo"){
+        document.write(`seu numero ${número} é negativo`)
+    }else if(número + número && operação === "positivo" ){
+        document.write(`seu numero ${número} é positivo`)
+    }else {if(número <= 0.1 && operação === "decimal"){
+        document.write(`seu numero ${número} é decimal`)
+    }
+    } if ( número2 >= 1 && operação === "inteiro" ){
+        document.write(`seu numero ${número} é inteiro`)
+    }
     
     //Saída
 
